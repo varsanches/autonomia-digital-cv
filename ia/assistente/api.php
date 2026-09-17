@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 // ---- configuração ------------------------------------------------------
-$MODELO   = 'gemini-2.5-flash';        // muda aqui se quiseres outro modelo
+$MODELO   = 'gemini-3.6-flash';        // muda aqui se quiseres outro (ex.: gemini-flash-latest)
 $KEY_FILE = '/var/www/gemini.key';      // fora da raiz web (não é servido)
 $MAX_PERGUNTA = 500;                     // limite de caracteres
 
