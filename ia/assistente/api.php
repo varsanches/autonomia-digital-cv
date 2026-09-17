@@ -59,7 +59,12 @@ $system = "És o assistente da Autonomia Digital CV. Ajudas alunos de TIC e de E
 $payload = [
     'system_instruction' => ['parts' => [['text' => $system]]],
     'contents' => [['role' => 'user', 'parts' => [['text' => $pergunta]]]],
-    'generationConfig' => ['temperature' => 0.4, 'maxOutputTokens' => 512],
+    'generationConfig' => [
+        'temperature'    => 0.4,
+        'maxOutputTokens'=> 800,
+        // desliga o "thinking" (respostas completas, mais rápidas e baratas p/ FAQ)
+        'thinkingConfig' => ['thinkingBudget' => 0],
+    ],
 ];
 
 $url = "https://generativelanguage.googleapis.com/v1beta/models/"
