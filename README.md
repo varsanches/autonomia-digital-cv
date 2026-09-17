@@ -46,8 +46,10 @@ dão autonomia total — sem plataformas caras no meio:
 - Um **dashboard em Power BI** com os dados do site, **publicado**, para eu **ver o que
   funciona e decidir** — em vez de adivinhar.
 
-**Custo total: ~5 USD/mês.** É a diferença entre depender de uma plataforma cara e ter o meu
-próprio serviço no ar. É, no fundo, a tese da marca: **autonomia digital, sem complicações.**
+**Custo: praticamente nada por agora.** Está na **camada gratuita da AWS** até **dez/2026**
+(6 meses); a partir daí, **estimo ~1.000 a 1.400 CVE/mês** (≈ 10–13 USD) — *estimativa
+própria, não fatura*. Mesmo depois, é uma **fração** de uma plataforma SaaS
+(~3.500–5.300 CVE/mês). É, no fundo, a tese da marca: **autonomia digital, sem complicações.**
 
 ---
 
@@ -55,7 +57,7 @@ próprio serviço no ar. É, no fundo, a tese da marca: **autonomia digital, sem
 
 | A dor | O que resolve | Como |
 |---|---|---|
-| Plataformas caras | **Servidor + site próprios** | AWS EC2 a ~5 USD/mês em vez de ~R$199–299/mês |
+| Plataformas caras | **Servidor + site próprios** | AWS EC2 **grátis 6 meses**, depois ~1.000–1.400 CVE/mês (est.) — em vez de ~R$199–299/mês |
 | Material que se perde | **Área de turma `/turma1`** | sítio único e privado (palavra-passe) com vídeos, ficheiros e resolvidos |
 | Decidir às cegas | **Dashboard em Power BI** | indicadores do site publicados, para decidir com dados |
 
@@ -93,7 +95,7 @@ flowchart LR
 | Web / CMS | **WordPress + tema Astra** | publicar conteúdo depressa, extensível com código próprio |
 | Segurança | **HTTPS (Let's Encrypt)**, renovação automática | tráfego cifrado, sem custo |
 | BI | **Power BI** (relatório publicado) | transformar os dados do site em decisão |
-| Custo | **~5 USD/mês** | um serviço real a operar com orçamento mínimo |
+| Custo | **grátis** (camada gratuita) até dez/2026; depois ~1.000–1.400 CVE/mês (est.) | serviço real com orçamento mínimo |
 
 ---
 
@@ -165,7 +167,7 @@ de BI.
   a que melhor demonstra *"criar e publicar um relatório"*. A base de dados **nunca** é
   aberta à internet.
 - **Visuais sugeridos:** publicações **por mês**, publicações **por categoria**, cartões com
-  o total de **artigos/páginas/e-books**, e um cartão com o **custo mensal (~5 USD)**.
+  o total de **artigos/páginas/e-books**, e um cartão com o **custo** (grátis agora; estimativa após dez/2026).
 - **Publicação:** *Publicar na Web* (link público). ⚠️ Só métricas — **nada de dados pessoais**.
 
 🔗 **Dashboard:** ✏️ *(colocar aqui o link depois de publicares no Power BI)*
@@ -177,7 +179,8 @@ de BI.
 > ✏️ Confirmar/atualizar antes de apresentar.
 
 - Serviço **em produção** desde **julho de 2026**, com **HTTPS** e renovação automática.
-- **~5 USD/mês** — contra ~R$199–299/mês de uma plataforma SaaS equivalente.
+- **Camada gratuita da AWS** até dez/2026; depois **~1.000–1.400 CVE/mês** (estimativa própria),
+  contra **~3.500–5.300 CVE/mês** de uma plataforma SaaS equivalente.
 - **8 artigos**, **9 páginas** e **3 e-books** publicados (dados reais do site, set. 2026).
 - Uma **turma real** a usar a `/turma1` — materiais e gravações num só sítio, **deixaram de
   se perder**.
