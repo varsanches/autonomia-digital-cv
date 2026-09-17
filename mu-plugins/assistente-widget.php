@@ -53,13 +53,13 @@ add_action('wp_footer', function () { ?>
 </button>
 
 <div id="ad-assist" role="dialog" aria-label="Assistente de dúvidas">
-  <div class="cab"><b>Assistente de Dúvidas</b><span>TIC · Excel · Autonomia Digital CV</span>
+  <div class="cab"><b>Assistente de Dúvidas</b><span>Excel · Word · Windows · Internet · e mais</span>
     <button class="x" id="ad-assist-x" aria-label="Fechar">×</button></div>
   <div class="msgs" id="ad-assist-msgs">
-    <div class="m ai">Olá! 👋 Escreve a tua dúvida sobre Excel, Word ou o computador.</div>
+    <div class="m ai">Olá! 👋 Pergunta o que quiseres sobre informática — Excel, Word, Windows, internet ou o teu computador.</div>
   </div>
   <div class="barra">
-    <input id="ad-assist-q" type="text" maxlength="500" placeholder="Ex.: como somo uma coluna?" autocomplete="off">
+    <input id="ad-assist-q" type="text" maxlength="500" placeholder="Ex.: como organizo os meus ficheiros?" autocomplete="off">
     <button id="ad-assist-send">Enviar</button>
   </div>
 </div>
