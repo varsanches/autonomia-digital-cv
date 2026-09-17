@@ -190,8 +190,10 @@ a **chave da API fica no servidor** (num pequeno *endpoint* próprio), **nunca n
 Assim junto **IA** e **Segurança na Cloud**: a página fala com o meu servidor, e só o servidor
 fala com o modelo de IA.
 
-> Estado: ✏️ *(a construir / planeado)* · Modelo previsto: ✏️ *(ex.: Gemini, com plano
-> gratuito; ou um modelo económico)*. Custo controlado e chave protegida.
+> **Estado: ✅ no ar** em <https://autonomiadigitalcv.com/assistente/> · Modelo:
+> **gemini-3.6-flash** (API do Google AI Studio, plano gratuito) · a chave vive no servidor
+> (`/var/www/gemini.key`, fora da raiz web) e nunca no browser nem no repositório.
+> Código em [`ia/assistente/`](ia/assistente/).
 
 ---
 
