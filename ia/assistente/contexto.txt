@@ -5,15 +5,33 @@ problema nunca foi o aluno, foi a forma como lhe ensinaram. Site: autonomiadigit
 
 O PROFESSOR
 André Sanches — Formador de TIC e Engenheiro de TI, de Mindelo (São Vicente), Cabo Verde.
-Cria cursos, e-books e conteúdos práticos, explicados passo a passo, para quem começa do zero.
+Fundador da Autonomia Digital CV. Cria cursos, e-books e conteúdos práticos, explicados
+passo a passo, para quem começa do zero.
 
-CURSOS
-- Excel do Zero: curso ao vivo, em turmas pequenas, 6 aulas. Preço: 5.000 escudos (CVE).
-  Inscrições abertas. Aulas práticas, ao vivo, sem jargão, com exemplos da vida real.
-- Word do Zero e Excel Avançado: em breve — entra na lista de espera pelo WhatsApp.
+CURSOS (aulas AO VIVO — diferente dos e-books)
+- Curso "Excel do Zero": ao vivo, em turmas pequenas, 6 aulas. Preço: 5.000 escudos (CVE).
+  Inscrições abertas. Aulas práticas, sem jargão, com exemplos da vida real.
+  Programa das 6 aulas:
+    1. Conhecer o Excel — livro, folha e célula; o teu primeiro orçamento (entrada, despesas,
+       reserva de emergência e saldo).
+    2. As primeiras fórmulas — alça de preenchimento; SOMA, MÉDIA, MÁXIMO e CONTAR; formatar
+       em escudos (CVE).
+    3. O ficheiro decide sozinho — SE, SOMA.SE e formatação condicional.
+    4. Ver os dados — gráficos, ordenar e filtrar.
+    5. Procurar e cruzar — PROCV, dados de duas folhas e listas suspensas.
+    6. Tabelas dinâmicas e o painel — resumir muitas linhas num clique e montar um painel.
+- Curso "Word do Zero" e "Excel Avançado": em breve — entra na lista de espera pelo WhatsApp.
 
-E-BOOKS (coleção "do Zero")
-Guias em PDF: "AWS do Zero", "Excel do Zero" e "Word do Zero". Preço: 9 € cada (na Hotmart).
+E-BOOKS (guias em PDF — coleção "do Zero", 9 € cada, na Hotmart; diferente dos cursos ao vivo)
+- "Excel do Zero" (e-book): do básico às fórmulas e tabelas. Aprendes a organizar dados em
+  folhas de cálculo, as fórmulas essenciais (somar, média, contar), criar e formatar tabelas
+  com aspeto profissional, e truques que poupam horas de trabalho.
+- "Word do Zero" (e-book): do documento em branco ao relatório profissional. Aprendes a
+  escrever e guardar sem medo, formatar texto (tipos de letra, negrito, cor, alinhamento),
+  organizar com estilos (Título 1 e 2), inserir imagens e tabelas, tratar de margens,
+  cabeçalhos e números de página, criar um ÍNDICE AUTOMÁTICO que se atualiza sozinho, e
+  guardar em PDF. Inclui apêndices com atalhos e soluções para problemas comuns.
+- "AWS do Zero" (e-book): primeiros passos na nuvem da AWS, explicados do zero, passo a passo.
 
 BLOG
 Artigos técnicos com guias práticos (Windows, Excel, segurança, nuvem…), em linguagem simples.
@@ -25,5 +43,7 @@ COMO INSCREVER-SE / FALAR CONNOSCO
 - Site (página "Cursos"): autonomiadigitalcv.com
 
 NOTAS
+- Há duas coisas com o nome "Excel do Zero": o CURSO ao vivo (6 aulas, 5.000 CVE) e o E-BOOK
+  (PDF, 9 €). Se a pergunta não distinguir, explica que existem os dois.
 - Para inscrições, preços atualizados e datas das próximas turmas, o melhor é falar pelo WhatsApp.
 - Não partilhes palavras-passe de turmas nem dados pessoais de alunos.
