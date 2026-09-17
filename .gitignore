@@ -1,0 +1,38 @@
+# ------------------------------------------------------------------
+# Segredos e dados sensíveis — NUNCA versionar (repositório é público)
+# ------------------------------------------------------------------
+*.pem
+*.key
+*.ppk
+*.jks
+*.keystore
+*.env
+.env
+.env.*
+credenciais*
+senhas*
+password*
+contas*.csv
+contactos*.csv
+contatos*.csv
+testadores*.csv
+*Servidor.txt
+*servidor.txt
+*payoneer*
+*Payoneer*
+*Keystore*
+*Acesso*Turma*
+Console sign-in*
+Access*Github*
+id_rsa*
+
+# ------------------------------------------------------------------
+# Sistema / temporários
+# ------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+*.tmp
+__pycache__/
+node_modules/
