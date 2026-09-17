@@ -36,7 +36,17 @@ add_action('wp_footer', function () { ?>
   #ad-assist .barra button:disabled{opacity:.55;cursor:default;}
 </style>
 
-<button id="ad-assist-btn" aria-label="Abrir assistente de dúvidas" title="Dúvidas? Pergunta-me">💬</button>
+<button id="ad-assist-btn" aria-label="Abrir assistente de dúvidas" title="Dúvidas? Pergunta-me">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle cx="12" cy="3" r="1.5" fill="#fff"/>
+    <path d="M12 4.5V7" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <rect x="4" y="7.5" width="16" height="11" rx="3.5" fill="#fff"/>
+    <path d="M2 12v3M22 12v3" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="9.2" cy="13" r="1.7" fill="#2E6DB4"/>
+    <circle cx="14.8" cy="13" r="1.7" fill="#2E6DB4"/>
+    <path d="M9.5 16.3h5" stroke="#2E6DB4" stroke-width="1.6" stroke-linecap="round"/>
+  </svg>
+</button>
 
 <div id="ad-assist" role="dialog" aria-label="Assistente de dúvidas">
   <div class="cab"><b>Assistente de Dúvidas</b><span>TIC · Excel · Autonomia Digital CV</span>
