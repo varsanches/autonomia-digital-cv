@@ -87,6 +87,15 @@ $system = "És o assistente da Autonomia Digital CV. Ajudas alunos de TIC e util
         . "geral do computador. Se não souberes ou a pergunta fugir ao tema, diz que não sabes "
         . "— não inventes.";
 
+// Contexto oficial (site, cursos, professor) — editável em contexto.txt, sem mexer no código.
+$ctx = @trim(@file_get_contents(__DIR__ . '/contexto.txt'));
+if ($ctx) {
+    $system .= "\n\nCONTEXTO OFICIAL (usa isto para responder sobre a Autonomia Digital CV, "
+             . "o site, os cursos e o professor André Sanches. Se te perguntarem algo sobre isto "
+             . "que NÃO esteja aqui, diz que não tens a certeza e sugere o WhatsApp ou o e-mail. "
+             . "Não inventes preços, datas nem contactos):\n" . $ctx;
+}
+
 // ---- chamada ao Gemini -------------------------------------------------
 $payload = [
     'system_instruction' => ['parts' => [['text' => $system]]],
