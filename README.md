@@ -193,7 +193,10 @@ fala com o modelo de IA.
 > **Estado: ✅ no ar** em <https://autonomiadigitalcv.com/assistente/> · Modelo:
 > **gemini-3.6-flash** (API do Google AI Studio, plano gratuito) · a chave vive no servidor
 > (`/var/www/gemini.key`, fora da raiz web) e nunca no browser nem no repositório.
-> Código em [`ia/assistente/`](ia/assistente/).
+> Código em [`ia/assistente/`](ia/assistente/). Está acessível em **todo o site** (páginas,
+> artigos e a área da turma) através de um **botão de chat flutuante** — um *mu-plugin*
+> (`mu-plugins/assistente-widget.php`). Tem **travões de uso** (por IP e por dia) para
+> proteger a quota gratuita.
 
 ---
 

@@ -48,6 +48,37 @@ if (mb_strlen($pergunta) > $MAX_PERGUNTA) {
     $pergunta = mb_substr($pergunta, 0, $MAX_PERGUNTA);
 }
 
+// ---- travões de uso (protegem a quota gratuita) ------------------------
+$RATE_DIR = sys_get_temp_dir() . '/ad_assist';
+@mkdir($RATE_DIR, 0700, true);
+$now = time();
+$ip  = $_SERVER['REMOTE_ADDR'] ?? 'x';
+
+// por IP: no máximo 15 perguntas em 10 minutos
+$ipFile = $RATE_DIR . '/ip_' . md5($ip);
+$hits = @json_decode(@file_get_contents($ipFile), true);
+if (!is_array($hits)) { $hits = []; }
+$hits = array_values(array_filter($hits, function ($t) use ($now) { return $t > $now - 600; }));
+if (count($hits) >= 15) {
+    http_response_code(429);
+    echo json_encode(['erro' => 'Muitas perguntas seguidas. Espera um minuto e tenta de novo.']);
+    exit;
+}
+
+// global: no máximo 300 perguntas por dia (protege a quota diária gratuita)
+$dayFile  = $RATE_DIR . '/day_' . date('Ymd');
+$dayCount = (int) @file_get_contents($dayFile);
+if ($dayCount >= 300) {
+    http_response_code(429);
+    echo json_encode(['erro' => 'O assistente já ajudou muita gente hoje. Volta amanhã. 🙂']);
+    exit;
+}
+
+// conta esta pergunta
+$hits[] = $now;
+@file_put_contents($ipFile, json_encode($hits), LOCK_EX);
+@file_put_contents($dayFile, (string) ($dayCount + 1), LOCK_EX);
+
 // ---- instrução do sistema (personalidade do assistente) ----------------
 $system = "És o assistente da Autonomia Digital CV. Ajudas alunos de TIC e de Excel "
         . "em português europeu (pt-PT), tratando por \"tu\". Responde de forma simples, "
