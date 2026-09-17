@@ -111,7 +111,7 @@ Os módulos que mais me envolveram (⭐) são o **núcleo técnico** deste proje
 | Empreendedorismo, Criatividade e Packs de Serviço | transformar competências em produtos | a marca **Autonomia Digital**; e-books e cursos como *packs*; página de venda |
 | Kit de Ferramentas p/ Trabalho Remoto e Freelance · *Tech Checkpoint* | ferramentas de trabalho remoto | Git/GitHub, cópias de segurança em vários locais, perfil de *freelancer* |
 | **BI & Cloud Default** ⭐ | **Power BI**: criar e **publicar** relatórios/*dashboards* | **dashboard com os dados do site, publicado** — ver secção 9 |
-| Engenharia de Inteligência Artificial | fundamentos de IA aplicada | evolução prevista (secção 11) |
+| **Engenharia de Inteligência Artificial** | como a IA funciona e como usá-la nos projetos | **IA como copiloto no desenvolvimento** + **assistente de dúvidas** no site (chave no servidor) — ver **secção 10** |
 | Engenharia de Software e Python para Dados | programar e automatizar com Python | **automação em Python** para gerar conteúdos/materiais; boas práticas de repositório |
 | Projeto · *Demo Day* | conceber, documentar e apresentar | este projeto, este repositório e a apresentação |
 
@@ -174,7 +174,28 @@ de BI.
 
 ---
 
-## 10. Resultados / Impacto
+## 10. IA no projeto
+
+O módulo de **Engenharia de IA** tem dois objetivos: perceber **como a IA funciona** e
+**usá-la nos nossos projetos**. Neste trabalho, a IA entra em duas camadas:
+
+**1. IA no desenvolvimento (já em uso).** Usei um assistente de IA (Claude Code) como
+*copiloto* para acelerar o projeto — gerar e rever conteúdos, documentar (este README),
+escrever automações em Python e resolver problemas de configuração. Não substitui o meu
+trabalho; **multiplica-o**, sobretudo trabalhando sozinho e sem equipa.
+
+**2. IA no produto (incremento).** Um **assistente de dúvidas** para os alunos no site: o
+aluno pergunta em linguagem natural e recebe ajuda sobre a matéria. Ponto técnico importante —
+a **chave da API fica no servidor** (num pequeno *endpoint* próprio), **nunca no browser**.
+Assim junto **IA** e **Segurança na Cloud**: a página fala com o meu servidor, e só o servidor
+fala com o modelo de IA.
+
+> Estado: ✏️ *(a construir / planeado)* · Modelo previsto: ✏️ *(ex.: Gemini, com plano
+> gratuito; ou um modelo económico)*. Custo controlado e chave protegida.
+
+---
+
+## 11. Resultados / Impacto
 
 > ✏️ Confirmar/atualizar antes de apresentar.
 
@@ -188,13 +209,13 @@ de BI.
 
 ---
 
-## 11. O que aprendi + próximos passos
+## 12. O que aprendi + próximos passos
 
 **Aprendi:** ✏️ 3–4 frases honestas — o mais difícil, o que resolvi sozinho, o que levo da
 formação (começar do zero e mesmo assim entregar algo no ar).
 
-**A seguir:** ✏️ ex.: uma funcionalidade de **IA** (assistente de dúvidas dos alunos);
-automatizar cópias de segurança; mais cursos na plataforma.
+**A seguir:** ✏️ ex.: pôr o **assistente de IA** (secção 10) em produção; automatizar as
+cópias de segurança; mais cursos na plataforma.
 
 ---
 
