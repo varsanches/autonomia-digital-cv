@@ -11,10 +11,14 @@ if (!defined('ABSPATH')) { exit; }
 
 add_action('wp_footer', function () { ?>
 <style>
-  #ad-assist-btn{position:fixed;right:20px;bottom:20px;z-index:99999;width:58px;height:58px;
-    border-radius:50%;background:#2E6DB4;color:#fff;border:0;cursor:pointer;font-size:26px;
-    box-shadow:0 6px 20px rgba(31,42,68,.28);display:flex;align-items:center;justify-content:center;}
-  #ad-assist-btn:hover{background:#255c9a;}
+  #ad-assist-btn{position:fixed!important;right:20px!important;bottom:20px!important;z-index:99999!important;
+    width:58px!important;height:58px!important;min-width:0!important;max-width:none!important;
+    padding:0!important;margin:0!important;border:0!important;border-radius:50%!important;
+    background:#2E6DB4!important;color:#fff!important;cursor:pointer!important;line-height:0!important;
+    box-shadow:0 6px 20px rgba(31,42,68,.28)!important;display:flex!important;align-items:center!important;
+    justify-content:center!important;}
+  #ad-assist-btn:hover{background:#255c9a!important;}
+  #ad-assist-btn svg{display:block!important;width:30px!important;height:30px!important;}
   #ad-assist{position:fixed;right:20px;bottom:88px;z-index:99999;width:340px;max-width:calc(100vw - 32px);
     background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 12px 34px rgba(31,42,68,.3);
     display:none;flex-direction:column;font-family:'Segoe UI',Calibri,Arial,sans-serif;}
