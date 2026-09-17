@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assistente de Dúvidas · Autonomia Digital CV</title>
+<style>
+  :root{ --navy:#1F2A44; --acc:#2E6DB4; --ink:#2A3647; --card:#F2F6FB; --mute:#7a8699; }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Segoe UI',Calibri,Arial,sans-serif;color:var(--ink);background:#eef2f7;
+       min-height:100vh;display:flex;align-items:center;justify-content:center;padding:16px;}
+  .box{width:100%;max-width:560px;background:#fff;border-radius:14px;overflow:hidden;
+       box-shadow:0 10px 30px rgba(31,42,68,.12);}
+  .cab{background:var(--navy);color:#fff;padding:18px 20px;}
+  .cab h1{font-size:1.15rem;font-weight:800;}
+  .cab p{font-size:.85rem;color:#c7d2e2;margin-top:2px;}
+  .chat{padding:16px 18px;max-height:52vh;overflow-y:auto;display:flex;flex-direction:column;gap:10px;}
+  .msg{padding:11px 14px;border-radius:12px;font-size:.95rem;line-height:1.45;max-width:88%;white-space:pre-wrap;}
+  .eu{align-self:flex-end;background:var(--acc);color:#fff;border-bottom-right-radius:4px;}
+  .ai{align-self:flex-start;background:var(--card);color:var(--ink);border-bottom-left-radius:4px;}
+  .dica{color:var(--mute);font-size:.85rem;text-align:center;padding:6px 0;}
+  .barra{display:flex;gap:8px;padding:14px 18px;border-top:1px solid #e6ebf2;}
+  .barra input{flex:1;padding:11px 14px;border:1px solid #cfd8e6;border-radius:10px;font-size:.95rem;}
+  .barra button{padding:11px 18px;border:0;border-radius:10px;background:var(--acc);color:#fff;
+                font-weight:700;cursor:pointer;font-size:.95rem;}
+  .barra button:disabled{opacity:.55;cursor:default;}
+</style>
+</head>
+<body>
+  <div class="box">
+    <div class="cab">
+      <h1>Assistente de Dúvidas</h1>
+      <p>TIC · Excel · Autonomia Digital CV</p>
+    </div>
+    <div class="chat" id="chat">
+      <div class="msg ai">Olá! 👋 Escreve a tua dúvida sobre Excel, Word ou o computador e eu ajudo.</div>
+    </div>
+    <div class="barra">
+      <input id="q" type="text" placeholder="Ex.: como somo uma coluna no Excel?" maxlength="500" autocomplete="off">
+      <button id="enviar">Perguntar</button>
+    </div>
+  </div>
+
+<script>
+  const chat = document.getElementById('chat');
+  const q = document.getElementById('q');
+  const btn = document.getElementById('enviar');
+
+  function add(texto, quem){
+    const d = document.createElement('div');
+    d.className = 'msg ' + (quem === 'eu' ? 'eu' : 'ai');
+    d.textContent = texto;
+    chat.appendChild(d);
+    chat.scrollTop = chat.scrollHeight;
+    return d;
+  }
+
+  async function perguntar(){
+    const texto = q.value.trim();
+    if(!texto) return;
+    add(texto, 'eu');
+    q.value = '';
+    btn.disabled = true;
+    const aviso = add('A pensar…', 'ai');
+    try{
+      const r = await fetch('api.php', {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({ pergunta: texto })
+      });
+      const data = await r.json();
+      aviso.textContent = data.resposta || data.erro || 'Sem resposta.';
+    }catch(e){
+      aviso.textContent = 'Não consegui ligar ao assistente. Tenta outra vez.';
+    }finally{
+      btn.disabled = false;
+      q.focus();
+    }
+  }
+
+  btn.addEventListener('click', perguntar);
+  q.addEventListener('keydown', e => { if(e.key === 'Enter') perguntar(); });
+</script>
+</body>
+</html>
