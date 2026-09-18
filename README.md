@@ -171,6 +171,9 @@ de BI.
 - **Publicação:** *Publicar na Web* (link público). ⚠️ Só métricas — **nada de dados pessoais**.
 
 🔗 **Dashboard (ao vivo):** https://app.powerbi.com/view?r=eyJrIjoiNGVhZjhhZGYtNjQ3ZS00ZTM0LTkxMDYtODNmNDU3OWU0Yzk0IiwidCI6IjdiNWNiZGU0LTI2N2YtNDVmOS05ZWYyLThlOTZmNTViNWFkMSIsImMiOjl9
+· incorporado no site em **autonomiadigitalcv.com/painel/**
+
+![Dashboard em Power BI — Atividade do site](docs/capturas/dashboard.png)
 
 ---
 
