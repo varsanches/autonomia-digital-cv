@@ -123,6 +123,11 @@ $resp = curl_exec($ch);
 $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 curl_close($ch);
 
+if ($code === 429) {
+    http_response_code(429);
+    echo json_encode(['erro' => 'Estou a receber muitas perguntas ao mesmo tempo. Espera uns segundos e tenta de novo. 🙂']);
+    exit;
+}
 if ($code !== 200 || $resp === false) {
     http_response_code(502);
     echo json_encode(['erro' => 'O assistente não conseguiu responder. Tenta outra vez.']);
