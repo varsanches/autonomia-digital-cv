@@ -1,0 +1,18 @@
+{
+  "name": "Autonomia Digital CV",
+  "dataColors": ["#e8912b", "#1b2436", "#2E6DB4", "#7a8699", "#217346", "#cfd6e2"],
+  "background": "#FFFFFF",
+  "foreground": "#1b2436",
+  "foregroundNeutralSecondary": "#7a8699",
+  "tableAccent": "#e8912b",
+  "good": "#217346",
+  "neutral": "#7a8699",
+  "bad": "#c0392b",
+  "maximum": "#1b2436",
+  "minimum": "#eaf4fb",
+  "textClasses": {
+    "title":    { "color": "#1b2436", "fontFace": "Segoe UI" },
+    "label":    { "color": "#1b2436", "fontFace": "Segoe UI" },
+    "callout":  { "color": "#1b2436", "fontFace": "Segoe UI Semibold" }
+  }
+}
