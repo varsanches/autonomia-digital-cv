@@ -170,7 +170,7 @@ de BI.
   o total de **artigos/páginas/e-books**, e um cartão com o **custo** (grátis agora; estimativa após dez/2026).
 - **Publicação:** *Publicar na Web* (link público). ⚠️ Só métricas — **nada de dados pessoais**.
 
-🔗 **Dashboard:** ✏️ *(colocar aqui o link depois de publicares no Power BI)*
+🔗 **Dashboard (ao vivo):** https://app.powerbi.com/view?r=eyJrIjoiNGVhZjhhZGYtNjQ3ZS00ZTM0LTkxMDYtODNmNDU3OWU0Yzk0IiwidCI6IjdiNWNiZGU0LTI2N2YtNDVmOS05ZWYyLThlOTZmNTViNWFkMSIsImMiOjl9
 
 ---
 
