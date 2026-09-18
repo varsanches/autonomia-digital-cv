@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 // ---- configuração ------------------------------------------------------
-$MODELO   = 'gemini-3.6-flash';        // muda aqui se quiseres outro (ex.: gemini-flash-latest)
+$MODELO   = 'gemini-flash-lite-latest'; // "lite": limite gratuito maior. Alt.: gemini-3.6-flash
 $KEY_FILE = '/var/www/gemini.key';      // fora da raiz web (não é servido)
 $MAX_PERGUNTA = 500;                     // limite de caracteres
 
@@ -103,8 +103,6 @@ $payload = [
     'generationConfig' => [
         'temperature'    => 0.4,
         'maxOutputTokens'=> 1500,
-        // desliga o "thinking" (respostas completas, mais rápidas e baratas p/ FAQ)
-        'thinkingConfig' => ['thinkingBudget' => 0],
     ],
 ];
 
