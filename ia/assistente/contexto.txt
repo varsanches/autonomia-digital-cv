@@ -33,8 +33,16 @@ E-BOOKS (guias em PDF — coleção "do Zero", 9 € cada, na Hotmart; diferente
   guardar em PDF. Inclui apêndices com atalhos e soluções para problemas comuns.
 - "AWS do Zero" (e-book): primeiros passos na nuvem da AWS, explicados do zero, passo a passo.
 
-BLOG
-Artigos técnicos com guias práticos (Windows, Excel, segurança, nuvem…), em linguagem simples.
+BLOG — ARTIGOS PUBLICADOS (em autonomiadigitalcv.com/blog)
+Guias práticos, em linguagem simples. Artigos atuais, por tema:
+- Nuvem: "Armazenamento na Nuvem: O Que É e Porque Deves Usar"; "OneDrive, Google Drive e
+  Outros: Qual Escolher?"; "Tens uma conta Google e provavelmente não sabes".
+- Excel / Office: "5 atalhos do Excel que te poupam horas"; "Já não precisas de decorar
+  fórmulas do Excel. Precisas de saber pedir.".
+- AWS e Cloud: "Grátis na AWS? Cuidado, há 3 tipos".
+- Segurança: "4 hábitos que te protegem online".
+- Windows: "Que versão do Windows devo usar? Suporte, requisitos e qual instalar".
+(Para a lista mais recente, aponta sempre para autonomiadigitalcv.com/blog.)
 
 COMO INSCREVER-SE / FALAR CONNOSCO
 - WhatsApp: wa.me/2389801121
