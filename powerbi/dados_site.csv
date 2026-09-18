@@ -1,18 +1,18 @@
-post_title,post_type,post_date
-"Tens uma conta Google e provavelmente não sabes",post,"2026-08-28 22:36:53"
-Cursos,page,"2026-08-22 21:57:10"
-"Curso Excel do Zero",page,"2026-08-22 20:53:53"
-"Turma 1 — Excel do Zero",page,"2026-08-22 20:47:07"
-"Já não precisas de decorar fórmulas do Excel. Precisas de saber pedir.",post,"2026-08-15 17:38:22"
-"OneDrive, Google Drive e Outros: Qual Escolher?",post,"2026-07-25 20:13:12"
-"Armazenamento na Nuvem: O Que É e Porque Deves Usar",post,"2026-07-25 20:12:34"
-"Que versão do Windows devo usar? Suporte, requisitos e qual instalar",post,"2026-07-12 16:30:33"
-E-books,page,"2026-07-05 22:20:56"
-"AWS do Zero",page,"2026-07-05 22:18:59"
-"4 hábitos que te protegem online",post,"2026-07-05 11:16:27"
-"5 atalhos do Excel que te poupam horas",post,"2026-07-05 11:10:58"
-"Grátis na AWS? Cuidado, há 3 tipos",post,"2026-07-04 17:21:30"
-Blog,page,"2026-07-04 16:00:07"
-Contacto,page,"2026-07-04 15:59:39"
-Sobre,page,"2026-07-04 15:58:10"
-Home,page,"2026-07-04 14:17:17"
+﻿Titulo,Tipo,Data,Mes,Categoria
+"Grátis na AWS? Cuidado, há 3 tipos",Artigo,2026-07-04,2026-07,"AWS e Cloud"
+"5 atalhos do Excel que te poupam horas",Artigo,2026-07-05,2026-07,"Office e Produtividade"
+"4 hábitos que te protegem online",Artigo,2026-07-05,2026-07,Segurança
+"Que versão do Windows devo usar? Suporte, requisitos e qual instalar",Artigo,2026-07-12,2026-07,Windows
+"Armazenamento na Nuvem: O Que É e Porque Deves Usar",Artigo,2026-07-25,2026-07,Nuvem
+"OneDrive, Google Drive e Outros: Qual Escolher?",Artigo,2026-07-25,2026-07,Nuvem
+"Já não precisas de decorar fórmulas do Excel. Precisas de saber pedir.",Artigo,2026-08-15,2026-08,"Office e Produtividade"
+"Tens uma conta Google e provavelmente não sabes",Artigo,2026-08-28,2026-08,Nuvem
+Home,Página,2026-07-04,2026-07,(Página)
+Sobre,Página,2026-07-04,2026-07,(Página)
+Contacto,Página,2026-07-04,2026-07,(Página)
+Blog,Página,2026-07-04,2026-07,(Página)
+"AWS do Zero",Página,2026-07-05,2026-07,(Página)
+E-books,Página,2026-07-05,2026-07,(Página)
+"Turma 1 — Excel do Zero",Página,2026-08-22,2026-08,(Página)
+"Curso Excel do Zero",Página,2026-08-22,2026-08,(Página)
+Cursos,Página,2026-08-22,2026-08,(Página)
