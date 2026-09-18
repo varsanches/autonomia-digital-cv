@@ -102,7 +102,7 @@ $payload = [
     'contents' => [['role' => 'user', 'parts' => [['text' => $pergunta]]]],
     'generationConfig' => [
         'temperature'    => 0.4,
-        'maxOutputTokens'=> 800,
+        'maxOutputTokens'=> 1500,
         // desliga o "thinking" (respostas completas, mais rápidas e baratas p/ FAQ)
         'thinkingConfig' => ['thinkingBudget' => 0],
     ],
